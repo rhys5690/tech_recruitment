@@ -13,10 +13,8 @@ var displayEnterDescription = function() {
     var $enteredDescription = $(".entered_description");
     $enteredDescription.on("click", function(e) {
 
-
         //Prevent default page submit
         e.preventDefault();
-
 
         //remove class display none from the suburb div
         $enterDescription.addClass("none");
@@ -35,10 +33,8 @@ var displayCompanySize = function() {
     var $enteredCompanySize = $(".entered_company_size");
     $enteredCompanySize.on("click", function(e) {
 
-
         //Prevent default page submit
         e.preventDefault();
-
 
         //remove class display none from the suburb div
         $companySize.addClass("none");
@@ -57,10 +53,8 @@ var displayYearsExperience = function() {
     var $enteredYearsExperience = $(".entered_years_experience");
     $enteredYearsExperience.on("click", function(e) {
 
-
         //Prevent default page submit
         e.preventDefault();
-
 
         //remove class display none from the suburb div
         $yearsExperience.addClass("none");
@@ -79,10 +73,8 @@ var displayEnterTechnology = function() {
     var $enteredTechnology = $(".entered_relevant_technologies");
     $enteredTechnology.on("click", function(e) {
 
-
         //Prevent default page submit
         e.preventDefault();
-
 
         //remove class display none from the suburb div
         $enterTechnology.addClass("none");
@@ -113,10 +105,8 @@ var displayEnterName = function() {
     var $enteredName = $(".entered_name");
     $enteredName.on("click", function(e) {
 
-
         //Prevent default page submit
         e.preventDefault();
-
 
         //remove class display none from the suburb div
         $enterName.addClass("none");
@@ -140,10 +130,14 @@ $(document).ready(function() {
         $findTechTalent.addClass("none");
         displayEnterName();
 
-        $(".submit_form").on("ajax:success", function(e, data, status, xhr) {
-        console.log(data);
+        $("#input-form").on("ajax:success", function(e, data, status, xhr) {
+            console.log(data);
 
+            var $enterEmail = $(".enter_email");
+            $enterEmail.addClass("none");
+            $(".page-1").addClass("none");
 
+        });
 
     });
 });
