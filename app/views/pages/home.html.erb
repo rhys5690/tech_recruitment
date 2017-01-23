@@ -21,12 +21,12 @@
             <div class="form-wrapper">
                 <button class="find-tech-talent-button">Get Started</button>
 
-                <div class="enter-suburb form none">
+                <div class="enter_name form none">
 
                     <%= form_tag("/home", method: "get", :remote => true, :id => "input-form") do %>
                     <%= label_tag("Enter your name") %>
                     <%= text_field_tag(:name) %>
-                    <%= button_tag("Next", :class => "enter_name") %>
+                    <%= button_tag("Next", :class => "entered_name") %>
                 </div>
 
                 <div class="enter_front_back form none">
