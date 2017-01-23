@@ -1,0 +1,81 @@
+
+
+
+
+/*nav bar attempt*/
+
+html {
+
+}
+
+.none {
+  display: none;
+}
+
+.nav {
+  text-align: center
+}
+
+.main-area {
+  position: relative;
+  margin-top: auto;
+  background-color: #5bbc2e;
+  color: white;
+  text-align: center;
+  /*background: url("/assets/background-image.jpg");
+  background-size: 1017px 632px;
+  background-repeat: no-repeat;*/
+  height: 70vh;
+
+}
+
+.inside-green {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.description-area {
+  margin-top: 20px;
+}
+
+.find-tech-talent-button {
+  color: white;
+  background-color: #5bbc2e;
+  border-color: white;
+
+}
+
+.find-tech-talent-button:hover {
+  color: #5bbc2e;
+  background-color: white;
+}
+
+h5.main-area {
+  color: white;
+}
+
+.how-it-works {
+  text-align: center;
+}
+
+.testimonial-area {
+  background-color: #f9f9f9;
+}
+
+.top-businesses-area {
+  text-align: center;
+}
+
+.main-area-2 {
+  text-align: center;
+  background-color: #5bbc2e;
+  color: white;
+}
+
+.footer-text {
+  text-align: center;
+  /*background-color: #7d7d7d;*/
+}
