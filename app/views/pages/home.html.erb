@@ -21,11 +21,11 @@
             <!-- Start of form -->
 
             <div class="form-wrapper">
-                <button class="find-tech-talent-button">Get Started</button>
+                <button class="find-tech-talent-button flipInY animated">Get Started</button>
 
                 <div class="enter_name form none">
 
-                    <%= form_tag("/json", method: "get", :remote => true, :id => "input-form") do %>
+                    <%= form_tag("/json", method: "get", :format => :json, :remote => true, :id => "input-form") do %>
                     <%= label_tag("Enter your name") %>
                     <%= text_field_tag(:name) %>
                     <%= button_tag("Next", :class => "entered_name") %>
@@ -77,20 +77,22 @@
         </div>
     </div>
 
-    <div class="description-area twelve columns">
+    <div class="description-area twelve container">
         <h5 class="how-it-works">How It Works</h5>
 
-        <div class="one-third column">
-            <h5>Step 1</h5>
-            <p>Click the "Get Started" button above.</p>
-        </div>
-        <div class="one-third column">
-            <h5>Step 2</h5>
-            <p>Fill in a quick, 2 minute form describing your ideal candidate.</p>
-        </div>
-        <div class="one-third column">
-            <h5>Step 3</h5>
-            <p>Get matched with the perfect candidate for the job.</p>
+        <div class="columns">
+            <div class="one-third column">
+                <h5>Step 1</h5>
+                <p>Click the "Get Started" button above.</p>
+            </div>
+            <div class="one-third column">
+                <h5>Step 2</h5>
+                <p>Fill in a quick, 2 minute form describing your ideal candidate.</p>
+            </div>
+            <div class="one-third column">
+                <h5>Step 3</h5>
+                <p>Get matched with the perfect candidate for the job.</p>
+            </div>
         </div>
     </div>
 
@@ -147,11 +149,11 @@
 
     <h5>
         Thank You
-        <%=@name%>
+        <span class="name"><%=@name%></span>
     </h5>
 
     <p>Thank you
-        <%= @name %>
+        <span class="name"><%= @name %></span>
         for using Tech Talent Finder's FREE candidate finder. The top developer recruitment application on the planet (as rated by 3 independent voters from Tech Talent Finder).</p>
 
     <p>According to your answers, you're looking for a

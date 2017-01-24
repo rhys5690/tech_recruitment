@@ -4,7 +4,7 @@ class UserMailer < ApplicationMailer
 
 def welcome(user)
   @user = user #@user will be whatever user we pass in to the 'welcome' method
-  @name = name
+  @name = user.name
   mail( :to => @user.email, :subject => "Just wanted to say hi :)", :cc => "rhysdiab@60minutetrainingweek.com" )
 
   end

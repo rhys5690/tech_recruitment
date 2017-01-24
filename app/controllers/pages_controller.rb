@@ -37,23 +37,12 @@ class PagesController < ApplicationController
 
         @user = User.new(user_params)
 
-        respond_to do |format|
-            if @user.save
-       # The line below is the only additional line we need in our Users controller.
-        UserMailer.welcome(@user).deliver_now
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
-            else
-                format.html { render :new }
-                format.json { render json: @user.errors, status: :unprocessable_entity }
-            end
-
-        @name = params[:name],
-        @front_back = params[:front_back],
-        @relevant_technologies = params[:relevant_technologies],
-        @years_experience = params[:years_experience],
-        @company_size = params[:company_size],
-        @description = params[:description],
+        @name = params[:name]
+        @front_back = params[:front_back]
+        @relevant_technologies = params[:relevant_technologies]
+        @years_experience = params[:years_experience]
+        @company_size = params[:company_size]
+        @description = params[:description]
         @email = params[:email]
 
 
@@ -67,6 +56,22 @@ class PagesController < ApplicationController
           :email => @email
         }
 
-        render :json => @response
+        # respond_to do |format|
+            if @user.save
+       # The line below is the only additional line we need in our Users controller.
+                UserMailer.welcome(@user).deliver_now
+                # format.html { redirect_to home_path, notice: 'User was successfully created.' }
+                render :json => @response
+            #
+            # else
+            #     format.html { render :new }
+            #     format.json { render json: @user.errors, status: :unprocessable_entity }
+            end
+        # end
     end
+
+    private
+        def user_params
+            params.permit(:name, :front_back, :relevant_technologies, :years_experience, :company_size, :description, :email)
+        end
 end

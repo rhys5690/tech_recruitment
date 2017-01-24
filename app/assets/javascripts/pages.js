@@ -141,9 +141,8 @@ $(document).ready(function() {
             //Make result page visible
             var $resultPage = $(".result-page");
             $resultPage.removeClass("none");
-
             console.log(data.name[0]);
-
+            $("span.name").text( data.name );
 
 
 
