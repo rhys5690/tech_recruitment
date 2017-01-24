@@ -3,6 +3,8 @@ class PagesController < ApplicationController
     # Define a method (or "action") called "home" in this controller.
     def home
 
+
+
         @name = params[:name],
         @front_back = params[:front_back],
         @relevant_technologies = params[:relevant_technologies],
@@ -32,6 +34,20 @@ class PagesController < ApplicationController
     end
 
     def json
+
+        @user = User.new(user_params)
+
+        respond_to do |format|
+            if @user.save
+       # The line below is the only additional line we need in our Users controller.
+        UserMailer.welcome(@user).deliver_now
+        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.json { render :show, status: :created, location: @user }
+            else
+                format.html { render :new }
+                format.json { render json: @user.errors, status: :unprocessable_entity }
+            end
+
         @name = params[:name],
         @front_back = params[:front_back],
         @relevant_technologies = params[:relevant_technologies],
