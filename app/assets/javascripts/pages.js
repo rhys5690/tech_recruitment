@@ -131,11 +131,21 @@ $(document).ready(function() {
         displayEnterName();
 
         $("#input-form").on("ajax:success", function(e, data, status, xhr) {
+            console.log("hello");
             console.log(data);
 
-            var $enterEmail = $(".enter_email");
-            $enterEmail.addClass("none");
+            // var $enterEmail = $(".enter_email");
+            // $enterEmail.addClass("none");
             $(".page-1").addClass("none");
+
+            //Make result page visible
+            var $resultPage = $(".result-page");
+            $resultPage.removeClass("none");
+
+            console.log(data.name[0]);
+
+
+
 
         });
 

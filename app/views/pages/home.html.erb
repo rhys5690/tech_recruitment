@@ -1,3 +1,4 @@
+
 <nav>
     <div class="twelve columns nav">
         <ul>
@@ -25,7 +26,7 @@
 
                 <div class="enter_name form none">
 
-                    <%= form_tag("/home", method: "get", :remote => true, :id => "input-form") do %>
+                    <%= form_tag("/json", method: "get", :remote => true, :id => "input-form") do %>
                     <%= label_tag("Enter your name") %>
                     <%= text_field_tag(:name) %>
                     <%= button_tag("Next", :class => "entered_name") %>
@@ -135,7 +136,7 @@
 
 <!-- Start of finding your tech talent -->
 <div class="searching-for-results twelve columns none">
-<h5>Picture Of Flashlight</h5>
+<h5>Locating Your Ideal Candidate...</h5>
 </div>
 
 <!-- End of searching for talent -->
@@ -149,5 +150,7 @@
 <!-- End of Description of me page -->
 
 <div class="result-page none">
-<h5>Your name is <%= @name %> </h5>
+    <h5>Your name is <%= @name %> </h5> <!-- test -->
+
+    <p>Thank you <%= @name %> for using Tech Talent Finder's FREE candidate finder. </p>
 </div>
