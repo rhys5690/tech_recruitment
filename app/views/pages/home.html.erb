@@ -144,7 +144,7 @@
 <!-- Start of description of me page -->
 
 <div class="search-result-page none">
-<h5>Searching for talent</h5>
+<h5>Searching for talent - 3d globe spinning</h5>
 </div>
 
 <!-- End of Description of me page -->
@@ -152,5 +152,26 @@
 <div class="result-page none">
     <h5>Your name is <%= @name %> </h5> <!-- test -->
 
-    <p>Thank you <%= @name %> for using Tech Talent Finder's FREE candidate finder. </p>
+    <p>Thank you <%= @name %> for using Tech Talent Finder's FREE candidate finder. The top developer recruitment application on the planet (as rated by 3 independent voters from Tech Talent Finder).</p>
+
+    <p>According to your answers, you're looking for a <%=@description%> <%=@front_back%> developer with <%=@years_experience %>. A candidate proficient with <%=@relevant_technologies %> and comfortable with the (fast/slow pace variable) of working in a <%= company_size %> company </p>
+
+    <p><%= @name %>, today is your lucky day..</p>
+
+    <p>After going through our advanced candidate finder artificial intelligence, and evaluating, sorting and practically interviewing over 4 billion potential candidates in less than a millisecond (we evaluate the development ability of everyone, developer or not), we have found the one PERFECT candidate for your company.  </p>
+
+    <p>Your ideal candidate is a Sydney based <%= @front_back %> developer named Rhys Diab.</p>
+
+    <%= image_tag("Rhys.jpg", :class=> 'my_image') %>
+
+    <p>Rhys is a passionate lawyer turned <%=@front_back %> developer with an unusual set of skills and experiences which PERFECTLY match your job requirements </p>
+
+    <p>It's as if your development kindred spirits.</p>
+
+    <p>Rhys's unusal story starts in a small legal technology company in the inner city of Sydney.</p>
+
+
+
+
+    <p></p>
 </div>
