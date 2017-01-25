@@ -28,6 +28,8 @@ p {
 }
 
 .result-page {
+  background: url('https://unsplash.it/1000/1500
+');
 }
 
 .my_image {
@@ -62,13 +64,16 @@ a:hover {
 .main-area {
   position: relative;
   margin-top: auto;
-  background-color: #5bbc2e;
+  // background-color: #5bbc2e;
   color: white;
   text-align: center;
   /*background: url("/assets/background-image.jpg");
   background-size: 1017px 632px;
   background-repeat: no-repeat;*/
-  height: 70vh;
+
+  background: url('https://unsplash.it/1000/1500
+');
+  height: 100vh;
   margin-bottom: 2rem;
 
 }
@@ -87,13 +92,13 @@ a:hover {
 
 .find-tech-talent-button {
   color: white;
-  background-color: #5bbc2e;
+  // background-color: #5bbc2e;
   border-color: white;
 
 }
 
 .find-tech-talent-button:hover {
-  color: #5bbc2e;
+  color: black;
   background-color: white;
 }
 
@@ -118,6 +123,7 @@ h5.main-area {
   text-align: center;
   background-color: #5bbc2e;
   color: white;
+  background: url('https://unsplash.it/1000/1500');
 }
 
 .lowest-text {
@@ -142,4 +148,8 @@ h5.main-area {
 
 .grey-background {
 background-color: #f9f9f9;
+}
+
+.white-background {
+  background-color: white;
 }
