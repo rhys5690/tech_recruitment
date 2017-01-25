@@ -13,8 +13,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: #f9f9f9;
+    border: 1px solid black;
+
 }
+
 
 h5 {
   text-align: center;
@@ -65,6 +68,7 @@ a:hover {
   background-size: 1017px 632px;
   background-repeat: no-repeat;*/
   height: 70vh;
+  margin-bottom: 2rem;
 
 }
 
@@ -115,9 +119,10 @@ h5.main-area {
   color: white;
 }
 
-.footer-text {
+.lowest-text {
   text-align: center;
   background-color: #f9f9f9;
+  margin-top: 20rem;
 }
 
 .columns {
