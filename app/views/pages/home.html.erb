@@ -15,74 +15,75 @@
 
 
 <div class="page-1">
+    <div class="row">
+        <div class="twelve columns main-area">
+            <div class="inside-green">
 
-    <div class="twelve columns main-area">
-        <div class="inside-green">
+                <h5>Find Top Tech Talent Today</h5>
 
-            <h5>Find Top Tech Talent Today</h5>
+                <!-- Start of form -->
 
-            <!-- Start of form -->
+                <div class="form-wrapper">
+                    <button class="find-tech-talent-button">Get Started</button> <!--flipInY animated -->
 
-            <div class="form-wrapper">
-                <button class="find-tech-talent-button">Get Started</button> <!--flipInY animated -->
+                    <div class="enter_name form none">
 
-                <div class="enter_name form none">
+                        <%= form_tag("/json", method: "get", :format => :json, :remote => true, :id => "input-form") do %>
+                            <%= label_tag("Enter your name") %>
+                            <%= text_field_tag(:name) %>
+                        <%= button_tag("Next", :class => "entered_name") %>
+                    </div>
 
-                    <%= form_tag("/json", method: "get", :format => :json, :remote => true, :id => "input-form") do %>
-                    <%= label_tag("Enter your name") %>
-                    <%= text_field_tag(:name) %>
-                    <%= button_tag("Next", :class => "entered_name") %>
+                    <div class="enter_front_back form none">
+                        <%= label_tag("Are you looking for a front-end or back-end developer?") %>
+                        <%= text_field_tag(:front_back) %>
+                        <%= button_tag("Next", :class => "entered_front_back") %>
+                    </div>
+
+                    <div class="enter_relevant_technologies form none">
+                        <%= label_tag("Enter the technologies you would like the candidate to be proficient in") %>
+                        <%= text_field_tag(:relevant_technologies) %>
+                        <%= button_tag("Next", :class => "entered_relevant_technologies") %>
+                    </div>
+
+                    <div class="enter_years_experience form none">
+                        <%= label_tag("How many years of experience do you require?") %>
+                        <%= text_field_tag(:years_experience) %>
+                        <%= button_tag("Next", :class => "entered_years_experience") %>
+                    </div>
+
+                    <div class="enter_company_size form none">
+                        <%= label_tag("Enter the size of your company (small, medium or large)") %>
+                        <%= text_field_tag(:company_size) %>
+                        <%= button_tag("Next", :class => "entered_company_size") %>
+                    </div>
+
                 </div>
 
-                <div class="enter_front_back form none">
-                    <%= label_tag("Are you looking for a front-end or back-end developer?") %>
-                    <%= text_field_tag(:front_back) %>
-                    <%= button_tag("Next", :class => "entered_front_back") %>
+                <div class="enter_description form none">
+                    <%= label_tag("Describe your ideal candidate in one word") %>
+                    <%= text_field_tag(:description) %>
+                    <%= button_tag("Next", :class => "entered_description") %>
                 </div>
 
-                <div class="enter_relevant_technologies form none">
-                    <%= label_tag("Enter the technologies you would like the candidate to be proficient in") %>
-                    <%= text_field_tag(:relevant_technologies) %>
-                    <%= button_tag("Next", :class => "entered_relevant_technologies") %>
+                <div class="enter_email form none">
+                    <%= label_tag("Enter your email") %>
+                    <%= text_field_tag(:email) %>
+                    <%= submit_tag("Next", :class => "submit_form") %>
+                    <% end %>
                 </div>
 
-                <div class="enter_years_experience form none">
-                    <%= label_tag("How many years of experience do you require?") %>
-                    <%= text_field_tag(:years_experience) %>
-                    <%= button_tag("Next", :class => "entered_years_experience") %>
-                </div>
+                <div class="display-result-property-value none"></div>
 
-                <div class="enter_company_size form none">
-                    <%= label_tag("Enter the size of your company (small, medium or large)") %>
-                    <%= text_field_tag(:company_size) %>
-                    <%= button_tag("Next", :class => "entered_company_size") %>
-                </div>
+                <!-- End of form -->
 
             </div>
-
-            <div class="enter_description form none">
-                <%= label_tag("Describe your ideal candidate in one word") %>
-                <%= text_field_tag(:description) %>
-                <%= button_tag("Next", :class => "entered_description") %>
-            </div>
-
-            <div class="enter_email form none">
-                <%= label_tag("Enter your email") %>
-                <%= text_field_tag(:email) %>
-                <%= submit_tag("Next", :class => "submit_form") %>
-                <% end %>
-            </div>
-
-            <div class="display-result-property-value none"></div>
-
-            <!-- End of form -->
-
         </div>
     </div>
 
         <h5 class="how-it-works">How It Works</h5>
 
-        <div class="columns">
+        <div class="row">
             <div class="one-third column">
                 <h5>Step 1</h5>
                 <p>Click the "Get Started" button above.</p>
@@ -98,7 +99,7 @@
         </div>
 
 
-    <div class="testimonial-area twelve columns">
+    <div class="testimonial-area twelve row">
         <div class="six columns">
             <h5>"My complete recruitment experience from start to end was excellently handled by Tech Talent Scout. When finding me a suitable candidate, the expectations of what I was looking for was taken into consideration by them.
             </h5>
@@ -145,7 +146,7 @@
 
 <!-- End of Description of me page -->
 
-<div class="result-page container none">
+<div class="result-page container">
 
 
     <div class="thank-you grey-background section">
