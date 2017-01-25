@@ -4,8 +4,10 @@
 
 /*nav bar attempt*/
 
-html {
-
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 ul {
@@ -28,7 +30,7 @@ p {
 }
 
 .result-page {
-  background: url('https://unsplash.it/1000/1500
+  background: url('https://unsplash.it/2000/3000
 ');
 }
 
@@ -71,7 +73,7 @@ a:hover {
   background-size: 1017px 632px;
   background-repeat: no-repeat;*/
 
-  background: url('https://unsplash.it/1000/1500
+  background: url('https://unsplash.it/2000/3000
 ');
   height: 100vh;
   margin-bottom: 2rem;
@@ -123,7 +125,8 @@ h5.main-area {
   text-align: center;
   background-color: #5bbc2e;
   color: white;
-  background: url('https://unsplash.it/1000/1500');
+  background: url('https://unsplash.it/2000/3000
+');
 }
 
 .lowest-text {
@@ -152,4 +155,15 @@ background-color: #f9f9f9;
 
 .white-background {
   background-color: white;
+}
+
+.rhys-button {
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+
+}
+
+.last-day {
+  margin-bottom: 2rem;
 }
