@@ -142,7 +142,14 @@ $(document).ready(function() {
             var $resultPage = $(".result-page");
             $resultPage.removeClass("none");
             console.log(data.name[0]);
+
+            //Make instance variables available on results page
             $("span.name").text( data.name );
+            $("span.description").text( data.description );
+            $("span.front_back").text( data.front_back );
+            $("span.relevant_technologies").text( data.relevant_technologies );
+            $("span.years_experience").text( data.years_experience );
+            $("span.company_size").text( data.company_size );
 
 
 
