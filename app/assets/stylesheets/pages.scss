@@ -30,8 +30,9 @@ p {
 }
 
 .result-page {
-  background: url('https://unsplash.it/2000/3000
-');
+  background: url('https://unsplash.it/2000/3000');
+  background-repeat: no-repeat;
+
 }
 
 .my_image {
@@ -142,11 +143,11 @@ h5.main-area {
 }
 
 .your-ideal-candidate {
-
+  margin-bottom: 2rem;
 }
 
 .thank-you {
-
+  margin-bottom: 2rem;
 }
 
 .grey-background {
@@ -166,4 +167,8 @@ background-color: #f9f9f9;
 
 .last-day {
   margin-bottom: 2rem;
+}
+
+.warning {
+
 }
