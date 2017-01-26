@@ -10,6 +10,14 @@
   -webkit-box-sizing: border-box;
 }
 
+p {
+  font-family: sans-serif;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -23,10 +31,12 @@ ul {
 
 h5 {
   text-align: center;
+  font-family: sans-serif;
 }
 
 p {
   padding: 1rem;
+  margin: 0rem;
 }
 
 .result-page {
@@ -115,6 +125,10 @@ h5.main-area {
 
 .testimonial-area {
   background-color: #f9f9f9;
+  margin-left: 5rem;
+margin-right: 5rem;
+margin-top: 3rem;
+margin-bottom: 3rem;
 
 }
 
@@ -171,4 +185,16 @@ background-color: #f9f9f9;
 
 .warning {
 
+}
+
+.testimonial-text {
+  border: 1px solid black;
+}
+
+.no1-recruitment {
+
+}
+
+.header-text {
+  margin-bottom: 0rem;
 }

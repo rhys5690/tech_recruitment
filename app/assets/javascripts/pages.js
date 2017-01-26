@@ -120,6 +120,20 @@ var displayEnterName = function() {
 $(document).ready(function() {
     console.log("hello");
 
+    new WOW().init();
+
+    addAnimation = function() {
+        var $testimonialArea = $(".testimonial-area");
+            $testimonialArea.addClass("bounceInOut animated");
+
+
+    };
+
+
+    $(".testimonial-area").onscroll = function() {
+        console.log("scroll happened");
+    };
+
     var $findTechTalent = $(".find-tech-talent-button");
 
     $findTechTalent.on("click", function() {
