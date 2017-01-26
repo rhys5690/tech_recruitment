@@ -122,17 +122,17 @@ $(document).ready(function() {
 
     new WOW().init();
 
-    addAnimation = function() {
-        var $testimonialArea = $(".testimonial-area");
-            $testimonialArea.addClass("bounceInOut animated");
-
-
-    };
-
-
-    $(".testimonial-area").onscroll = function() {
-        console.log("scroll happened");
-    };
+    // addAnimation = function() {
+    //     var $testimonialArea = $(".testimonial-area");
+    //         $testimonialArea.addClass("bounceInOut animated");
+    //
+    //
+    // };
+    //
+    //
+    // $(".testimonial-area").onscroll = function() {
+    //     console.log("scroll happened");
+    // };
 
     var $findTechTalent = $(".find-tech-talent-button");
 
