@@ -18,8 +18,8 @@
         <div class="twelve columns main-area">
             <div class="inside-green">
 
-                <h5 class="header-text">Find Top Tech Talent Today</h5>
-                <p class="no1-recruitment">The No.1 Website For Finding Top Developer For Your Business</p>
+                <h2 class="header-text">Find Top Tech Talent Today</h2>
+                <h5 class="no1-recruitment">The No.1 Website For Hiring Top Developers</h5>
 
                 <!-- Start of form -->
 
@@ -121,27 +121,24 @@
         <div class="container">
             <div class="row">
 
+                <div class="main-area-2 twelve columns wow flipInY animated">
+                    <h5>Find Top Developers For Your Team Today</h5>
+                    <button class="find-tech-talent-button wow flipInY animated">Get Started</button>
+                </div>
 
-
-        <div class="main-area-2 twelve columns wow flipInY animated">
-            <h5>Find Top Developers For Your Team Today</h5>
-            <button class="find-tech-talent-button wow flipInY animated">Get Started</button>
+            </div>
         </div>
 
-    </div>
-</div>
+        <div class="container">
+            <div class="row">
 
-<div class="container">
-    <div class="row">
+                <div class="twelve columns lowest-text wow flipInY animated">
+                    <p>@2017 Tech Talent Finder Inc.</p>
+                </div>
+            </div>
 
-
-        <div class="twelve columns lowest-text wow flipInY animated">
-            <p>@2017 Tech Talent Finder Inc.</p>
         </div>
     </div>
-
-</div>
-</div>
 
     <!-- End of first page -->
 
@@ -166,7 +163,7 @@
 
             <div class="row">
 
-                <div class="thank-you grey-background twelve columns wow flipInY animated">
+                <div class="thank-you grey-background twelve columns jello animated">
 
                     <h5>
                         Thank You
@@ -199,143 +196,153 @@
                 </div>
             </div>
         </div>
-                <div class="container">
+        <div class="container">
 
-                    <div class="row">
+            <div class="row">
 
-                        <div class="your-ideal-candidate white-background twelve columns">
+                <div class="your-ideal-candidate white-background twelve columns jello animated">
 
-                            <h5>Your Ideal Candidate Is...</h5>
+                    <h5>Your Ideal Candidate Is...</h5>
 
-                            <p>Your ideal candidate is a Sydney based
-                                <span class="front_back"><%= @front_back %></span>
-                                developer named Rhys Diab.</p>
+                    <button class="click-to-view">Click Here To View Your Ideal Candidate</button>
+                    <div class="ideal-candidate-click none">
 
-                            <%= image_tag("Rhys.jpg", :class=> 'my_image wow flipInY animated') %>
+                        <p>Your ideal candidate is a Sydney based
+                            <span class="front_back"><%= @front_back %></span>
+                            developer named Rhys Diab.</p>
 
-                            <p>Rhys is a passionate lawyer turned
-                                <span class="front_back"><%=@front_back %></span>
-                                developer with an unusual set of skills and experiences which PERFECTLY match your job requirements
-                            </p>
+                        <%= image_tag("Rhys.jpg", :class=> 'my_image flipInY animated') %>
 
-                            <p>It's as if your development kindred spirits.</p>
+                        <p>Rhys is a passionate lawyer turned
+                            <span class="front_back"><%=@front_back %></span>
+                            developer with an unusual set of skills and experiences which PERFECTLY match your job requirements
+                        </p>
 
-                        </div>
-                    </div>
-                </div>
+                        <p>It's as if your development kindred spirits.</p>
 
-                <div class="container">
-                    <div class="row">
-
-                        <div class="twelve columns Rhys-story grey-background wow flipInY animated">
-
-                            <h5>Rhys's Story</h5>
-
-                            <p>Rhys's unusal story starts at one of the most prestigious law schools in Sydney, The University Of New South Whales School of Law</p>
-
-                            <p>Like many top performing students Rhys was drawn to the most challenging course he could find. Law seemed like the perfect choice for his strong problem-solving skills and attention to detail.
-                            </p>
-
-                            <p>But while law satisfied Rhys's craving to solve difficult problems, it didn’t take long to realise his passion lay elsewhere.</p>
-
-                            <p>
-                                Ass all his fellow students were seeking clerkships and graduate positions at large law firms, Rhys was searching for something different.
-                            </p>
-
-                            <p>
-                                Something in technology...
-                            </p>
-
-                            <p>The company for worked for built software which automated the creation of legal documents for small businesses.</p>
-
-                            <p>It seemed like a match made in heaven.</p>
-
-                            <p>
-                                But as time went on Rhys found himself spending increasingly more time with the development team. The technology, which was at the heart of the company fascinated Rhys to no end.
-                            </p>
-
-                            <p>Maybe you can relate.</p>
-
-                            <p>Maybe you know someone like that..</p>
-
-                            <p>Not long after Rhys made a move which shocked his friends, family and even his dog. Rhys made the jump into General Assembly's Immersive Web Development Bootcamp to pursue his true passion...
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-
-                        <div class="twelve columns Rhys-skills white-background wow flipInY animated">
-
-                            <h5>Rhys's Skills..</h5>
-
-                            <p>Since making the jump from lawyer to
-                                <span class="front_back"><%= @front_back %></span>
-                                developer, Rhys has proved himsef to be a
-                                <span class="description"><%= @description %></span>
-                                candidate.
-                            </p>
-
-                            <p>With experience as a lawyer, Rhys has strong a strong problem-solving ability, acute attention to detail and a high degree of emotional intelligence
-                            </p>
-
-                            <p>Rhys is fascinated by
-                                <span class="relevant_technologies"><%= @relevant_technologies %></span>
-                                and looking forward to joining a
-                                <span class="company_size"><%= @company_size %></span>
-                                team.
-                            </p>
-
-                        </div>
                     </div>
 
                 </div>
+            </div>
+        </div>
 
-                <div class="container">
-                    <div class="row">
+        <div class="hidden-description-of-me none">
 
-                        <div class="last-day grey-background twelve columns wow flipInY animated">
 
-                            <h5>Why Today Is The Very Last Day We Can Guarantee An Interview With This Candidate</h5>
 
-                            <p>While we at Tech Talent Finder pride ourselves on being the best developer recruitment app in the world, the skill level and interpersonal skills of this particular candidate means he is currently receiving a TON of job offers.
-                            </p>
+        <div class="container">
+            <div class="row">
 
-                            <p>As much as he'd love to hear from you at some point in the future, It is likely if you don't contact him for an interview today he will be likely be employed and off the job market. (Lord knows that good ones don't stay between jobs long)</p>
+                <div class="twelve columns Rhys-story grey-background wow flipInY animated">
 
-                            <p>And just like that the PERFECT
-                                <span class="front_back"><%= @front_back %></span>
-                                developer for you business will be gone FOREVER</p>
+                    <h5>Rhys's Story</h5>
 
-                            <p>So it is important you click the button below and contact Rhys for an interview before it is too late.</p>
+                    <p>Rhys's unusal story starts at one of the most prestigious law schools in Sydney, The University Of New South Whales School of Law</p>
 
-                            <button class="rhys-button">Find Out More</button>
+                    <p>Like many top performing students Rhys was drawn to the most challenging course he could find. Law seemed like the perfect choice for his strong problem-solving skills and attention to detail.
+                    </p>
 
-                        </div>
-                    </div>
+                    <p>But while law satisfied Rhys's craving to solve difficult problems, it didn’t take long to realise his passion lay elsewhere.</p>
+
+                    <p>
+                        Ass all his fellow students were seeking clerkships and graduate positions at large law firms, Rhys was searching for something different.
+                    </p>
+
+                    <p>
+                        Something in technology...
+                    </p>
+
+                    <p>The company for worked for built software which automated the creation of legal documents for small businesses.</p>
+
+                    <p>It seemed like a match made in heaven.</p>
+
+                    <p>
+                        But as time went on Rhys found himself spending increasingly more time with the development team. The technology, which was at the heart of the company fascinated Rhys to no end.
+                    </p>
+
+                    <p>Maybe you can relate.</p>
+
+                    <p>Maybe you know someone like that..</p>
+
+                    <p>Not long after Rhys made a move which shocked his friends, family and even his dog. Rhys made the jump into General Assembly's Immersive Web Development Bootcamp to pursue his true passion...
+                    </p>
+
                 </div>
+            </div>
+        </div>
 
-                <div class="container">
-                    <div class="row">
+        <div class="container">
+            <div class="row">
 
-                        <div class="warning section white-background twelve columns wow bounceInOut animated">
+                <div class="twelve columns Rhys-skills white-background wow flipInY animated">
 
-                            <h5>Warning</h5>
+                    <h5>Rhys's Skills..</h5>
 
-                            <p>Tech Talent Finder takes their success rate very seriously and will be forced to fire an engineer if you don't interview Rhys today.</p>
+                    <p>Since making the jump from lawyer to
+                        <span class="front_back"><%= @front_back %></span>
+                        developer, Rhys has proved himsef to be a
+                        <span class="description"><%= @description %></span>
+                        candidate.
+                    </p>
 
-                            <button class="rhys-button">Find Out More</button>
+                    <p>With experience as a lawyer, Rhys has strong a strong problem-solving ability, acute attention to detail and a high degree of emotional intelligence
+                    </p>
 
-                        </div>
+                    <p>Rhys is fascinated by
+                        <span class="relevant_technologies"><%= @relevant_technologies %></span>
+                        and looking forward to joining a
+                        <span class="company_size"><%= @company_size %></span>
+                        team.
+                    </p>
 
-                    </div>
                 </div>
-
             </div>
 
         </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="last-day grey-background twelve columns wow flipInY animated">
+
+                    <h5>Why Today Is The Very Last Day We Can Guarantee An Interview With This Candidate</h5>
+
+                    <p>While we at Tech Talent Finder pride ourselves on being the best developer recruitment app in the world, the skill level and interpersonal skills of this particular candidate means he is currently receiving a TON of job offers.
+                    </p>
+
+                    <p>As much as he'd love to hear from you at some point in the future, It is likely if you don't contact him for an interview today he will be likely be employed and off the job market. (Lord knows that good ones don't stay between jobs long)</p>
+
+                    <p>And just like that the PERFECT
+                        <span class="front_back"><%= @front_back %></span>
+                        developer for you business will be gone FOREVER</p>
+
+                    <p>So it is important you click the button below and contact Rhys for an interview before it is too late.</p>
+
+                    <button class="rhys-button">Find Out More</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="warning section white-background twelve columns wow bounceInOut animated">
+
+                    <h5>Warning</h5>
+
+                    <p>Tech Talent Finder takes their success rate very seriously and will be forced to fire an engineer if you don't interview Rhys today.</p>
+
+                    <button class="rhys-button">Find Out More</button>
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
+
+</div>
+</div>
+</div>
 </div>

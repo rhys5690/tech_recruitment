@@ -1,3 +1,5 @@
+
+
 var displayEnterEmail = function() {
 
     var $enterEmail = $(".enter_email");
@@ -117,6 +119,10 @@ var displayEnterName = function() {
     });
 };
 
+var viewCandidate = function() {
+    $(".ideal-candidate-click").removeClass("none");
+};
+
 $(document).ready(function() {
     console.log("hello");
 
@@ -133,6 +139,13 @@ $(document).ready(function() {
     // $(".testimonial-area").onscroll = function() {
     //     console.log("scroll happened");
     // };
+
+
+    $(".click-to-view").on("click", function() {
+        $(".ideal-candidate-click").removeClass("none");
+        $(".click-to-view").addClass("none");
+        $(".hidden-description-of-me").removeClass("none");
+    });
 
     var $findTechTalent = $(".find-tech-talent-button");
 
@@ -164,7 +177,6 @@ $(document).ready(function() {
             $("span.relevant_technologies").text( data.relevant_technologies );
             $("span.years_experience").text( data.years_experience );
             $("span.company_size").text( data.company_size );
-
 
 
         });
