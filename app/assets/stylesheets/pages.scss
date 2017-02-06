@@ -220,3 +220,29 @@ background-color: #f9f9f9;
 .Rhys-skills {
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 601px) {
+  .inside-green {
+    transform: translate(-50%, -100%);
+  }
+
+  .no1-recruitment {
+    display: none;
+  }
+
+  .find-tech-talent-button {
+    margin-top: 4rem;
+    height: 7vh;
+    width: 21vh;
+    font-size: 1.5rem;
+  }
+
+  .my_image {
+    height: 180px;
+  }
+
+  .click-to-view {
+    height: 7vh;
+    width: 21vh;
+  }
+}
